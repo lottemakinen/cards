@@ -16,7 +16,8 @@ if($_SESSION['username'] == 'username') {
  echo $row["city"] . " ";
  echo $row["state"] . " ";
  echo $row["country"] . " ";
- print("<br>");
+echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>"; 
+print("<br>");
  }
  } else {
  echo "0 results";
